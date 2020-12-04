@@ -1,0 +1,486 @@
+<?xml version="1.0"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"   
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+  xmlns:proc="http://pds.nasa.gov/pds4/proc/v1"
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+  xmlns:nucspec="http://pds.nasa.gov/pds4/nucspec/v1"
+  xmlns:dawn="http://pds.nasa.gov/pds4/mission/dawn/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+                      http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd
+                      http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd
+                      http://pds.nasa.gov/pds4/nucspec/v1 https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.xsd
+                      http://pds.nasa.gov/pds4/mission/dawn/v1 https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.xsd
+                      "
+>
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_raw:grd-l1a-120126-120202_130628-rdg</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GRD-L1A-120126-120202_130628-RDG</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Prettyman, T. H.</author_list>
+      <publication_year>2020</publication_year>
+      <description>GRaND level 1a instrument readings</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-10-14</modification_date>
+        <version_id>1.0</version_id>
+        <description>PDS4 migration of GRD-L1A-120126-120202_130628-RDG.TAB from PDS3 dataset DAWN-A-GRAND-2-EDR-VESTA-COUNTS-V1.0</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2012-01-26T00:00Z</start_date_time>
+      <stop_date_time>2012-02-02T00:59Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Engineering</purpose>
+      <processing_level>Raw</processing_level>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>DAWN MISSION TO VESTA AND CERES</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.dawn_mission_to_vesta_and_ceres</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Dawn Spacecraft + GRaND</name>
+      <Observing_System_Component>
+        <name>DAWN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.dawn</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>GAMMA-RAY AND NEUTRON DETECTOR</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:dawn.grand</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(4) Vesta</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.4_vesta</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  <Discipline_Area>
+  <msn:Mission_Information>
+    <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
+    <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
+    <msn:spacecraft_clock_start>0380808092.000</msn:spacecraft_clock_start>
+    <msn:spacecraft_clock_stop>0381416432.000</msn:spacecraft_clock_stop>
+  </msn:Mission_Information>
+    <proc:Processing_Information>
+    <Local_Internal_Reference>
+      <local_identifier_reference>table</local_identifier_reference>
+      <local_reference_type>processing_information_to_data_object</local_reference_type>
+    </Local_Internal_Reference>
+    <proc:Process> 
+      <proc:Software>
+        <proc:name>GRD_L1A_PIPELINE</proc:name>
+        <proc:software_version_id>Version 1.0</proc:software_version_id>
+      </proc:Software>
+    </proc:Process>
+  </proc:Processing_Information>  
+    <nucspec:NucSpec_Observation_Properties>
+    <nucspec:Instrument_Settings>
+      <nucspec:State_Table>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:dawn_grand:data:state_table</lid_reference>
+          <reference_type>nucspec_product_to_state_table</reference_type>
+        </Internal_Reference>
+        <Local_Internal_Reference>
+          <local_identifier_reference>table</local_identifier_reference>
+          <local_reference_type>state_table_to_data_table</local_reference_type>
+        </Local_Internal_Reference>
+        <nucspec:State_Table_Entry>
+          <nucspec:state_index>16</nucspec:state_index>
+          <nucspec:State_Time>
+            <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
+            <nucspec:Time_Range_SCLK>
+              <nucspec:sclk_start_time>380808092</nucspec:sclk_start_time>
+              <nucspec:sclk_stop_time>381233852</nucspec:sclk_stop_time>
+            </nucspec:Time_Range_SCLK>
+          </nucspec:State_Time>
+        </nucspec:State_Table_Entry>
+        <nucspec:State_Table_Entry>
+          <nucspec:state_index xsi:nil="true" nilReason="missing"></nucspec:state_index>
+          <nucspec:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</nucspec:comment>
+          <nucspec:State_Time>
+            <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
+            <nucspec:Time_Range_SCLK>
+              <nucspec:sclk_start_time>381233912</nucspec:sclk_start_time>
+              <nucspec:sclk_stop_time>381234032</nucspec:sclk_stop_time>
+            </nucspec:Time_Range_SCLK>
+          </nucspec:State_Time>
+        </nucspec:State_Table_Entry>
+        <nucspec:State_Table_Entry>
+          <nucspec:state_index>15</nucspec:state_index>
+          <nucspec:State_Time>
+            <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
+            <nucspec:Time_Range_SCLK>
+              <nucspec:sclk_start_time>381234092</nucspec:sclk_start_time>
+              <nucspec:sclk_stop_time>381416432</nucspec:sclk_stop_time>
+            </nucspec:Time_Range_SCLK>
+          </nucspec:State_Time>
+        </nucspec:State_Table_Entry>
+      </nucspec:State_Table>
+    </nucspec:Instrument_Settings>
+    <nucspec:Observing_Conditions>
+      <nucspec:condition_type>SEP</nucspec:condition_type>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>true</nucspec:condition_active>
+        <nucspec:comment>SEP</nucspec:comment>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>380808092</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>381416432</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+    </nucspec:Observing_Conditions>
+    <nucspec:Observing_Conditions>
+      <nucspec:condition_type>Solar Flare</nucspec:condition_type>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>false</nucspec:condition_active>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>380808092</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>381416432</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+    </nucspec:Observing_Conditions>
+    <nucspec:Observing_Conditions>
+      <nucspec:condition_type>Gamma-ray Burst</nucspec:condition_type>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>false</nucspec:condition_active>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>380808092</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>381416432</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+    </nucspec:Observing_Conditions>
+    <nucspec:Observing_Conditions>
+      <nucspec:condition_type>Data Glitch</nucspec:condition_type>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>false</nucspec:condition_active>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>380808092</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>381416432</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+    </nucspec:Observing_Conditions>
+    </nucspec:NucSpec_Observation_Properties>
+      <dawn:grand>
+        <Local_Internal_Reference>
+          <local_identifier_reference>table</local_identifier_reference>
+          <local_reference_type>grand_parameters_to_table</local_reference_type>
+        </Local_Internal_Reference>
+        <dawn:TELREADOUT_List>
+          <dawn:TELREADOUT>
+            <dawn:grand_start_sclk>380808092</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381233852</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s">70</dawn:grand_interval>
+          </dawn:TELREADOUT>
+          <dawn:TELREADOUT>
+            <dawn:grand_start_sclk>381233912</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381234032</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s" xsi:nil="true" nilReason="missing"></dawn:grand_interval>
+            <dawn:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</dawn:comment>
+          </dawn:TELREADOUT>
+          <dawn:TELREADOUT>
+            <dawn:grand_start_sclk>381234092</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381416432</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s">70</dawn:grand_interval>
+          </dawn:TELREADOUT>
+      </dawn:TELREADOUT_List>
+        <dawn:TELSOH_List>
+          <dawn:TELSOH>
+            <dawn:grand_start_sclk>380808092</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381233852</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s">35</dawn:grand_interval>
+          </dawn:TELSOH>
+          <dawn:TELSOH>
+            <dawn:grand_start_sclk>381233912</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381234032</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s" xsi:nil="true" nilReason="missing"></dawn:grand_interval>
+            <dawn:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</dawn:comment>
+          </dawn:TELSOH>
+          <dawn:TELSOH>
+            <dawn:grand_start_sclk>381234092</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>381416432</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s">35</dawn:grand_interval>
+          </dawn:TELSOH>
+      </dawn:TELSOH_List>
+      </dawn:grand>
+</Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>GRD-L1A-120126-120202_130628-RDG.TAB</file_name>
+      <creation_date_time>2013-06-28T08:37:06Z</creation_date_time>
+      <records>17384</records>
+      <md5_checksum>ff595d5357ed564b23f7bf7dcc43b593</md5_checksum>
+    </File>
+    <Table_Character>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>17384</records>
+      <description>
+        This table contains GRaND EDR (level1a) instrument state-of-health
+        data, extracted from raw telmetry packets via a data pipeline.
+        
+        The table gives the instrument readings, including the voltage (V) for
+        each of the high voltage power supplies and for the CZT differential bias
+        and the internal temperatures (degrees C). Each row is time-tagged and
+        corresponds to a record in the raw data file.
+      </description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>18</fields>
+        <groups>0</groups>
+        <record_length unit="byte">176</record_length>
+        <Field_Character>
+          <name>SCET_UTC</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Date_Time_YMD</data_type>
+          <field_length unit="byte">19</field_length>
+          <field_format>%19s</field_format>
+          <description>
+            The UTC spacecraft event time (SCET) determined from the packet's SCLK
+            value.  The time format is yyyy-mm-ddThr:mn:sc.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>SCLK</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">20</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">11</field_length>
+          <field_format>%11d</field_format>
+          <unit>seconds</unit>
+          <description>
+            Spacecraft clock count at the start of the SOH interval.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS1</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">31</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 1, which supplies the
+            photomultiplier tube for the +Z phoswich.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS2</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">40</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 2, which supplies the
+            photomultiplier tube for the -Z phoswich.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS3</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">49</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 3, which supplies the
+            photomultiplier tube for the -Y boron-loaded plastic scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS4</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">58</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 4, which supplies the
+            photomultiplier tube for the +Y boron-loaded plastic scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS5</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">67</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 5, which supplies the
+            photomultiplier tube for the BGO scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_HVPS6</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">76</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for high voltage power supply (HVPS) 6, which provides the bulk
+            bias for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>V_CZT70</name>
+          <field_number>9</field_number>
+          <field_location unit="byte">85</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Reading for the differential bias supply for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_CZT1</name>
+          <field_number>10</field_number>
+          <field_location unit="byte">94</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor 1 for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_CZT2</name>
+          <field_number>11</field_number>
+          <field_location unit="byte">103</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor 2 for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_CZT3</name>
+          <field_number>12</field_number>
+          <field_location unit="byte">112</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor 3 for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_CZT4</name>
+          <field_number>13</field_number>
+          <field_location unit="byte">121</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor 4 for the CZT array.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_LVPS</name>
+          <field_number>14</field_number>
+          <field_location unit="byte">130</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor for the low voltage power supply.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_HVPS</name>
+          <field_number>15</field_number>
+          <field_location unit="byte">139</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor for the high voltage power supply.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_BGO</name>
+          <field_number>16</field_number>
+          <field_location unit="byte">148</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor for the BGO crystal (representative of the bulk
+            scintillator temperature).
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_PMT</name>
+          <field_number>17</field_number>
+          <field_location unit="byte">157</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor for the photomultiplier tube assembly.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>T_INTERFACE</name>
+          <field_number>18</field_number>
+          <field_location unit="byte">166</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Celsius</unit>
+          <description>
+            Temperature sensor for the interface.
+          </description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>

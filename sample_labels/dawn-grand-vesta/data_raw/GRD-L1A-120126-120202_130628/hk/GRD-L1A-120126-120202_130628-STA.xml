@@ -1,0 +1,855 @@
+<?xml version="1.0"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"   
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+  xmlns:proc="http://pds.nasa.gov/pds4/proc/v1"
+  xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
+  xmlns:nucspec="http://pds.nasa.gov/pds4/nucspec/v1"
+  xmlns:dawn="http://pds.nasa.gov/pds4/mission/dawn/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+                      http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd
+                      http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd
+                      http://pds.nasa.gov/pds4/nucspec/v1 https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.xsd
+                      http://pds.nasa.gov/pds4/mission/dawn/v1 https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.xsd
+                      "
+>
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_raw:grd-l1a-120126-120202_130628-sta</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GRD-L1A-120126-120202_130628-STA</title>
+    <information_model_version>1.11.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Prettyman, T. H.</author_list>
+      <publication_year>2020</publication_year>
+      <description>GRaND level 1a instrument state</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-10-14</modification_date>
+        <version_id>1.0</version_id>
+        <description>PDS4 migration of GRD-L1A-120126-120202_130628-STA.TAB from PDS3 dataset DAWN-A-GRAND-2-EDR-VESTA-COUNTS-V1.0</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2012-01-26T00:00Z</start_date_time>
+      <stop_date_time>2012-02-02T00:59Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Engineering</purpose>
+      <processing_level>Raw</processing_level>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>DAWN MISSION TO VESTA AND CERES</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.dawn_mission_to_vesta_and_ceres</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Dawn Spacecraft + GRaND</name>
+      <Observing_System_Component>
+        <name>DAWN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.dawn</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>GAMMA-RAY AND NEUTRON DETECTOR</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:dawn.grand</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(4) Vesta</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.4_vesta</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+  <Discipline_Area>
+  <msn:Mission_Information>
+    <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
+    <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
+    <msn:spacecraft_clock_start>0380808092.000</msn:spacecraft_clock_start>
+    <msn:spacecraft_clock_stop>0381416432.000</msn:spacecraft_clock_stop>
+  </msn:Mission_Information>
+    <proc:Processing_Information>
+    <Local_Internal_Reference>
+      <local_identifier_reference>table</local_identifier_reference>
+      <local_reference_type>processing_information_to_data_object</local_reference_type>
+    </Local_Internal_Reference>
+    <proc:Process> 
+      <proc:Software>
+        <proc:name>GRD_L1A_PIPELINE</proc:name>
+        <proc:software_version_id>Version 1.0</proc:software_version_id>
+      </proc:Software>
+    </proc:Process>
+  </proc:Processing_Information>  
+</Discipline_Area>
+  </Observation_Area>
+  <File_Area_Observational>
+    <File>
+      <file_name>GRD-L1A-120126-120202_130628-STA.TAB</file_name>
+      <creation_date_time>2013-06-28T08:37:06Z</creation_date_time>
+      <records>4</records>
+      <md5_checksum>e7ded1cf8253ff8a836402c6b7f2b6ba</md5_checksum>
+    </File>
+    <Table_Character>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>4</records>
+      <description>
+        This table contains GRaND EDR (level1a) instrument state-of-health
+        data, extracted from raw telmetry packets via a data pipeline.
+
+        Each row of the table gives the instrument state, including the mode,
+        high voltage settings, and counting parameters.  The first row always
+        corresponds to the first record in the raw data file.  Subsequent rows
+        are printed when any of the state parameters change.  The rows are
+        time-tagged so that periods for which the instrument state is fixed
+        can be identified.  If only one row is present, the instrument state
+        did not change between the START_TIME and the STOP_TIME.
+      </description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>46</fields>
+        <groups>0</groups>
+        <record_length unit="byte">247</record_length>
+        <Field_Character>
+          <name>SCET_UTC</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Date_Time_YMD</data_type>
+          <field_length unit="byte">19</field_length>
+          <field_format>%19s</field_format>
+          <description>
+            The UTC spacecraft event time (SCET) determined from the packet's SCLK
+            value.  The time format is yyyy-mm-ddThr:mn:sc.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>STATE_INDEX</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">20</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            The state index is a counter that starts at 0 and increments every
+            time the state changes.
+          </description>
+          <Special_Constants>
+            <valid_maximum>9999</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>DELTA_SCLK</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">25</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">8</field_length>
+          <field_format>%8d</field_format>
+          <unit>Seconds</unit>
+          <description>
+            The number of SCLK ticks (seconds) that the instrument was in the
+            state.  When only one state is present, then the duration is unknown.
+            The last state for a file with multiple states has an unknown
+            duration.  These states are assigned the MISSING_CONSTANT.
+          </description>
+          <Special_Constants>
+            <missing_constant>-999</missing_constant>
+            <valid_maximum>9999</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SCLK</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">33</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">11</field_length>
+          <field_format>%11d</field_format>
+          <unit>Seconds</unit>
+          <description>
+            Spacecraft clock count at the start of the SOH interval.
+          </description>
+          <Special_Constants>
+            <valid_maximum>4294967295</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>TELREADOUT</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">44</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6d</field_format>
+          <unit>Seconds</unit>
+          <description>
+            Measurement interval for the science data.
+          </description>
+          <Special_Constants>
+            <valid_maximum>2000</valid_maximum>
+            <valid_minimum>15</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>TELSOH</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">50</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">6</field_length>
+          <field_format>%6d</field_format>
+          <unit>Seconds</unit>
+          <description>
+            Measurement interval for the state-of-health readout.
+          </description>
+          <Special_Constants>
+            <valid_maximum>2000</valid_maximum>
+            <valid_minimum>2</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>MODE</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">56</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            Instrument mode (0=Standby, 1=Normal, 2=Anneal)
+          </description>
+          <Special_Constants>
+            <valid_maximum>2000</valid_maximum>
+            <valid_minimum>2</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS1_SET</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">58</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 1, which supplies the
+            photomultiplier tube for the +Z phoswich.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS1</name>
+          <field_number>9</field_number>
+          <field_location unit="byte">67</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS1 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS2_SET</name>
+          <field_number>10</field_number>
+          <field_location unit="byte">69</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 2, which supplies the
+            photomultiplier tube for the -Z phoswich.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS2</name>
+          <field_number>11</field_number>
+          <field_location unit="byte">78</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS2 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS3_SET</name>
+          <field_number>12</field_number>
+          <field_location unit="byte">80</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 3, which supplies the
+            photomultiplier tube for the -Y boron-loaded plastic scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS3</name>
+          <field_number>13</field_number>
+          <field_location unit="byte">89</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS3 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS4_SET</name>
+          <field_number>14</field_number>
+          <field_location unit="byte">91</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 4, which supplies the
+            photomultiplier tube for the +Y boron-loaded plastic scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS4</name>
+          <field_number>15</field_number>
+          <field_location unit="byte">100</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS4 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS5_SET</name>
+          <field_number>16</field_number>
+          <field_location unit="byte">102</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 5, which supplies the
+            photomultiplier tube for the BGO scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS5</name>
+          <field_number>17</field_number>
+          <field_location unit="byte">111</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS5 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS6_SET</name>
+          <field_number>18</field_number>
+          <field_location unit="byte">113</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">9</field_length>
+          <field_format>%9.2f</field_format>
+          <unit>Volts</unit>
+          <description>
+            Set point for high voltage power supply (HVPS) 5, which supplies the
+            photomultiplier tube for the BGO scintillator.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>HVPS6</name>
+          <field_number>19</field_number>
+          <field_location unit="byte">122</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, then HVPS6 is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>PM5_LVPS</name>
+          <field_number>20</field_number>
+          <field_location unit="byte">124</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, the analog +/-5V low voltage power supply is enabled.  The supply
+            provides power for analog and digital components, including the
+            scintillator pulse processing electronics and internal sensors
+            (temperature and voltage).
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>P12_LVPS</name>
+          <field_number>21</field_number>
+          <field_location unit="byte">126</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, the +12V low power supply is enabled, which supplies the high
+            voltage power supplies (if MODE=1) and the resistive heaters (if MODE=2)
+            used to anneal the CZT array.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>CZT_PM5_LVPS</name>
+          <field_number>22</field_number>
+          <field_location unit="byte">128</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">2</field_length>
+          <field_format>%2d</field_format>
+          <description>
+            If 1, the +/-5V supply for the CZT analog pulse processing circuits
+            is enabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>CZT_ENABLES</name>
+          <field_number>23</field_number>
+          <field_location unit="byte">130</field_location>
+          <data_type>ASCII_String</data_type>
+          <field_length unit="byte">17</field_length>
+          <field_format>%17s</field_format>
+          <unit>Seconds</unit>
+          <description>
+            Bit pattern indicating the state (1=disabled, 0=enabled) of each of the
+            16 CZT sensors, represented as a character string.  For readability,
+            the first character is blank.  The remaining characters represent bits,
+            read right to left, which give the state of the 16 sensors in order from
+            0-15. For example, the pattern 1111111111111110 indicates that all of
+            the CZT sensors are disabled except for sensor 0.  The pattern
+            0010000000000010 indicates that two of the sensors (1 and 13) are
+            disabled.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>NEMG_TOT_EVTS</name>
+          <field_number>24</field_number>
+          <field_location unit="byte">147</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Total number of gamma ray events recorded in the science data file. Note
+            that NEMG_TOT_EVTS + NEMN_TOT_EVTS is always less than or equal to
+            6676.
+          </description>
+          <Special_Constants>
+            <valid_maximum>6676</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>NEMG_CZT_EVTS</name>
+          <field_number>25</field_number>
+          <field_location unit="byte">152</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            The number of CZT single interaction (CAT10) events recorded in the
+            event buffer.  This value is always less than NEMG_TOT_EVTS.
+          </description>
+          <Special_Constants>
+            <valid_maximum>6676</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>NEMN_TOT_EVTS</name>
+          <field_number>26</field_number>
+          <field_location unit="byte">157</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Total number of neutron events recorded in the science data file. Note
+            that NEMG_TOT_EVTS + NEMN_TOT_EVTS is always less than or equal to
+            6676.
+          </description>
+          <Special_Constants>
+            <valid_maximum>6676</valid_maximum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BGO_CW</name>
+          <field_number>27</field_number>
+          <field_location unit="byte">162</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Lower channel (output of the BGO ADC)for the CAT2 coincidence window
+            for the BGO sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1023</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BGO_CW</name>
+          <field_number>28</field_number>
+          <field_location unit="byte">167</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 coincidence window
+            for the BGO sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1023</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BGO_ROI</name>
+          <field_number>29</field_number>
+          <field_location unit="byte">172</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Lower channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for the BGO spectrum.  Note that H_BGO_ROI - L_BGO_ROI = 64.
+            The window gives range of channels for the CAT2 BGO pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1023</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BGO_ROI</name>
+          <field_number>30</field_number>
+          <field_location unit="byte">177</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">5</field_length>
+          <field_format>%5d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for the BGO spectrum.  Note that H_BGO_ROI - L_BGO_ROI = 64.
+            The window gives range of channels for the CAT2 BGO pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>1023</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_MY_CW</name>
+          <field_number>31</field_number>
+          <field_location unit="byte">182</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the -Y BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_MY_CW</name>
+          <field_number>32</field_number>
+          <field_location unit="byte">186</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the -Y BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_MY_ROI</name>
+          <field_number>33</field_number>
+          <field_location unit="byte">190</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 region of interest
+            (ROI) for BLP -Y. Note that H_BLP_MY_ROI - L_BLP_MY_ROI = 64.  The window
+            gives the range of channels for the CAT2 BLP -Y pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_MY_ROI</name>
+          <field_number>34</field_number>
+          <field_location unit="byte">194</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for BLP -Y. Note that H_BLP_MY_ROI - L_BLP_MY_ROI = 64.  The window
+            gives range of channels for the CAT2 BLP -Y pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_PY_CW</name>
+          <field_number>35</field_number>
+          <field_location unit="byte">198</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the +Y BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_PY_CW</name>
+          <field_number>36</field_number>
+          <field_location unit="byte">202</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the +Y BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_PY_ROI</name>
+          <field_number>37</field_number>
+          <field_location unit="byte">206</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 region of interest
+            (ROI) for BLP +Y. Note that H_BLP_PY_ROI - L_BLP_PY_ROI = 64.  The window
+            gives the range of channels for the CAT2 BLP +Y pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_PY_ROI</name>
+          <field_number>38</field_number>
+          <field_location unit="byte">210</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for BLP +Y. Note that H_BLP_PY_ROI - L_BLP_PY_ROI = 64.  The window
+            gives range of channels for the CAT2 BLP +Y pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_MZ_CW</name>
+          <field_number>39</field_number>
+          <field_location unit="byte">214</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the -Z BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_MZ_CW</name>
+          <field_number>40</field_number>
+          <field_location unit="byte">218</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the -Z BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_MZ_ROI</name>
+          <field_number>41</field_number>
+          <field_location unit="byte">222</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 region of interest
+            (ROI) for BLP -Z. Note that H_BLP_MZ_ROI - L_BLP_MZ_ROI = 64.  The window
+            gives the range of channels for the CAT2 BLP -Z pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_MZ_ROI</name>
+          <field_number>42</field_number>
+          <field_location unit="byte">226</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for BLP -Z. Note that H_BLP_MZ_ROI - L_BLP_MZ_ROI = 64.  The window
+            gives range of channels for the CAT2 BLP -Z pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_PZ_CW</name>
+          <field_number>43</field_number>
+          <field_location unit="byte">230</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the +Z BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_PZ_CW</name>
+          <field_number>44</field_number>
+          <field_location unit="byte">234</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BLP ADC)for the CAT2 coincidence window
+            for the +Z BLP sensor.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>L_BLP_PZ_ROI</name>
+          <field_number>45</field_number>
+          <field_location unit="byte">238</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Lower channel (output of the BLP ADC)for the CAT2 region of interest
+            (ROI) for BLP +Z. Note that H_BLP_PZ_ROI - L_BLP_PZ_ROI = 64.  The window
+            gives the range of channels for the CAT2 BLP +Z pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>H_BLP_PZ_ROI</name>
+          <field_number>46</field_number>
+          <field_location unit="byte">242</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">4</field_length>
+          <field_format>%4d</field_format>
+          <description>
+            Upper channel (output of the BGO ADC)for the CAT2 region of interest
+            (ROI) for BLP +Z. Note that H_BLP_PZ_ROI - L_BLP_PZ_ROI = 64.  The window
+            gives range of channels for the CAT2 BLP +Z pulse height spectra.
+          </description>
+          <Special_Constants>
+            <valid_maximum>255</valid_maximum>
+            <valid_minimum>0</valid_minimum>
+          </Special_Constants>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>

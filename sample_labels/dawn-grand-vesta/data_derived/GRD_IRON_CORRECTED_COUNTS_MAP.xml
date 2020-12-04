@@ -1,0 +1,208 @@
+<?xml version="1.0"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"   
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd"
+>
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_derived:grd_iron_corrected_counts_map</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GRD_IRON_CORRECTED_COUNTS_MAP</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Yamashita, N.</author_list>
+      <publication_year>2020</publication_year>
+      <description>GRaND at Vesta Level 2 iron corrected counts map</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-04-08</modification_date>
+        <version_id>1.0</version_id>
+        <description>PDS4 migration of GRD_IRON_CORRECTED_COUNTS_MAP.TAB from PDS3 dataset DAWN-A-GRAND-5-VESTA-GAMMA-IRON-COR-V1.0.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2011-12-08T01:18:52Z</start_date_time>
+      <stop_date_time>2012-04-27T17:16:15Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>DAWN MISSION TO VESTA AND CERES</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.dawn_mission_to_vesta_and_ceres</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Dawn Spacecraft + GRaND</name>
+      <Observing_System_Component>
+        <name>DAWN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.dawn</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>GAMMA-RAY AND NEUTRON DETECTOR</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:dawn.grand</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(4) Vesta</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.4_vesta</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+      <msn:Mission_Information>
+        <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
+        <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
+        <msn:spacecraft_clock_start_count>0376579234.000</msn:spacecraft_clock_start_count>
+        <msn:spacecraft_clock_stop_count>0388819077.000</msn:spacecraft_clock_stop_count>
+      </msn:Mission_Information>    
+    </Discipline_Area>
+  </Observation_Area>
+  <Reference_List>
+    <External_Reference>
+      <doi>10.1111/maps.12139</doi>
+      <reference_text>Yamashita N., Prettyman T.H., Mittlefehldt D.W., Toplis M.J., McCoy T.J., Beck A.W., Reedy R.C., Feldman W.C., Lawrence D.J., Peplowski P.N., Forni O., Mizzon H., Raymond C.A. &amp; Russell C.T. (2013) Distribution of iron on Vesta. Meteoritics &amp; Planetary Science, 48, 2237-2251. DOI:10.1111/maps.12139.
+  </reference_text>
+    </External_Reference>
+  </Reference_List>
+  <File_Area_Observational>
+    <File>
+      <file_name>GRD_IRON_CORRECTED_COUNTS_MAP.TAB</file_name>
+      <creation_date_time>2013-07-31T22:52:20Z</creation_date_time>
+      <records>178698</records>
+      <md5_checksum>8d705dc0dbbbed639c833910334bdd80</md5_checksum>
+    </File>
+    <Table_Character>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>178698</records>
+      <description>BGO counting rate of Fe 7.6 MeV gamma-ray peaks measured by GRaND on Dawn
+                   at Vesta. The counting rates were normalized for variations of live time,
+                   solid angle of Vesta, and galactic cosmic ray intensity, smoothed, and
+                   corrected for variations of neutron number density. For more details, see
+                   Yamashita et al., 2013 (doi:10.1111/maps.12139).
+
+                   As discussed in Yamashita et al., 2013, a preliminary scaling factor was
+                   derived by scaling the average corrected counting rate to the mean Fe
+                   content of 13.8 wt.% of howardites such that
+
+                      Fe Abundance (wt.%) = Fe counting rate [count/s] x 189.2
+
+                   which users can apply. However caution is recommended for its
+                   applicability.
+      </description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>8</fields>
+        <groups>0</groups>
+        <record_length unit="byte">67</record_length>
+        <Field_Character>
+          <name>PIXEL_INDEX</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">10</field_length>
+          <field_format>%10d</field_format>
+          <description>Pixel index. The map covers -90 to 90 degrees latitude and -180 to 180
+                       degrees east longitude in the Claudia Double Prime coordinate system.
+                       Pixels are indexed from west to east and from south to north, starting
+                       with 0.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>MIN_LAT</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">11</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel latitude southernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MAX_LAT</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">18</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel latitude northernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DELTA_LAT</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">25</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Width of the pixel in latitude.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MIN_LON</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">32</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel east longitude westernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MAX_LON</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">39</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel east longitude easternmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DELTA_LON</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">46</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Width of the pixel in longitude.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>FE_COUNTING_RATE</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">53</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">13</field_length>
+          <field_format>%13.3E</field_format>
+          <unit>counts/s</unit>
+          <description>Fe counting rate at 7.6 MeV corrected for neutron number density (counts/s).</description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>

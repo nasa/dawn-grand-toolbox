@@ -1,0 +1,244 @@
+<?xml version="1.0"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/geom/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<Product_Observational 
+  xmlns="http://pds.nasa.gov/pds4/pds/v1"   
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd"
+>
+  <Identification_Area>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_derived:grd_neutron_absorption_map</logical_identifier>
+    <version_id>1.0</version_id>
+    <title>GRD_NEUTRON_ABSORPTION_MAP</title>
+    <information_model_version>1.10.0.0</information_model_version>
+    <product_class>Product_Observational</product_class>
+    <Citation_Information>
+      <author_list>Prettyman, T. H.</author_list>
+      <publication_year>2020</publication_year>
+      <description>GRaND at Vesta Level 2 neutron absorption map</description>
+    </Citation_Information>
+    <Modification_History>
+      <Modification_Detail>
+        <modification_date>2020-04-08</modification_date>
+        <version_id>1.0</version_id>
+        <description>PDS4 migration of GRD_NEUTRON_ABSORPTION_MAP.TAB from PDS3 dataset DAWN-A-GRAND-5-VESTA-GAMMA-IRON-COR-V1.0.</description>
+      </Modification_Detail>
+    </Modification_History>
+  </Identification_Area>
+  <Observation_Area>
+    <Time_Coordinates>
+      <start_date_time>2011-12-08T01:18:52Z</start_date_time>
+      <stop_date_time>2012-01-14T00:19:52Z</stop_date_time>
+    </Time_Coordinates>
+    <Primary_Result_Summary>
+      <purpose>Science</purpose>
+      <processing_level>Derived</processing_level>
+    </Primary_Result_Summary>
+    <Investigation_Area>
+      <name>DAWN MISSION TO VESTA AND CERES</name>
+      <type>Mission</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:investigation:mission.dawn_mission_to_vesta_and_ceres</lid_reference>
+        <reference_type>data_to_investigation</reference_type>
+      </Internal_Reference>
+    </Investigation_Area>
+    <Observing_System>
+      <name>Dawn Spacecraft + GRaND</name>
+      <Observing_System_Component>
+        <name>DAWN</name>
+        <type>Spacecraft</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument_host:spacecraft.dawn</lid_reference>
+          <reference_type>is_instrument_host</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+      <Observing_System_Component>
+        <name>GAMMA-RAY AND NEUTRON DETECTOR</name>
+        <type>Instrument</type>
+        <Internal_Reference>
+          <lid_reference>urn:nasa:pds:context:instrument:dawn.grand</lid_reference>
+          <reference_type>is_instrument</reference_type>
+        </Internal_Reference>
+      </Observing_System_Component>
+    </Observing_System>
+    <Target_Identification>
+      <name>(4) Vesta</name>
+      <type>Asteroid</type>
+      <Internal_Reference>
+        <lid_reference>urn:nasa:pds:context:target:asteroid.4_vesta</lid_reference>
+        <reference_type>data_to_target</reference_type>
+      </Internal_Reference>
+    </Target_Identification>
+    <Discipline_Area>
+      <msn:Mission_Information>
+        <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
+        <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
+        <msn:spacecraft_clock_start_count>0376579234.000</msn:spacecraft_clock_start_count>
+        <msn:spacecraft_clock_stop_count>0379772494.000</msn:spacecraft_clock_stop_count>
+      </msn:Mission_Information>    
+    </Discipline_Area>
+  </Observation_Area>
+  <Reference_List>
+    <External_Reference>
+      <doi>10.1126/science.1225354</doi>
+      <reference_text>Prettyman T.H., Mittlefehldt D.W., Yamashita N., Lawrence D.J., Beck A.W., Feldman W.C., McCoy T.J., McSween H.Y., Toplis M.J., Titus T.N., Tricarico P., Reedy R.C., Hendricks J.S., Forni O., Le Corre L., Li J.Y., Mizzon H., Reddy V., Raymond C.A. &amp; Russell C.T. (2012) Elemental mapping by Dawn reveals exogenic H in Vesta's regolith. Science, 338, 242-6. DOI:10.1126/science.1225354.
+      </reference_text>
+    </External_Reference>
+    <External_Reference>
+      <doi>10.1111/maps.12244</doi>
+      <reference_text>Prettyman T.H., Mittlefehldt D.W., Yamashita N., Beck A.W., Feldman W.C., Hendricks J.S., Lawrence D.J., McCoy T.J., McSween H.Y., Peplowski P.N., Reedy R.C., Toplis M.J., Le Corre L., Mizzon H., Reddy V., Titus T.N., Raymond C.A. &amp; Russell C.T. (2013) Neutron absorption constraints on the composition of 4 Vesta. Meteoritics &amp; Planetary Science, 48, 2211-2236. DOI:10.1111/maps.12244.
+      </reference_text>
+    </External_Reference>
+  </Reference_List>
+  <File_Area_Observational>
+    <File>
+      <file_name>GRD_NEUTRON_ABSORPTION_MAP.TAB</file_name>
+      <creation_date_time>2013-08-01T23:21:44Z</creation_date_time>
+      <records>204</records>
+      <md5_checksum>d9deb5c6bd26337f2cf0e650da23dadd</md5_checksum>
+    </File>
+    <Table_Character>
+      <local_identifier>table</local_identifier>
+      <offset unit="byte">0</offset>
+      <records>204</records>
+      <description>Global map of the compositional parameter
+       DCP, which varies linearly with the thermal neutron absorption cross
+       section of Vesta's regolith, determined from thermal and epithermal
+       neutron counting data acquired by the NASA Dawn mission's Gamma
+       Ray and Neutron Detector from low altitude (Prettyman et al., 2013, 
+       doi:10.1111/maps.12244).
+
+       A method to determine neutron absorption variations from
+       thermal+epithermal (TPE) and epithermal counting rates is presented by
+       Prettyman et al., 2013.  A scatter plot of normalized epithermal vs. TPE
+       counting rates is used to derive the compositional parameter, DCP
+       (unitless).  The perpendicular distance (DCP, denoted 'delta-C_perpendicular'
+       in Prettyman et al., 2013) of each data point from a
+       trend line, approximating the variation of epithermal vs. TPE counting
+       rates with hydrogen abundance, is sensitive to neutron absorption.
+
+       Assuming Vesta's global regolith is well represented by howardite
+       (e.g. see Prettyman et al., 2012, doi:10.1126/science.1225354), then the 
+       following relationship can be used to convert DCP to physical absorption units:
+
+       Sigma_Eff = 216.4 * DCP + 66.3,
+
+       where Sigma_Eff is the macroscopic thermal neutron absorption
+       cross section with units of 10E-4 square-centimeters per gram.  The
+       propagated 1-sigma uncertainty in Sigma_Eff is given by
+
+       Unc_Sigma_Eff = 216.4 * SIGMA_DCP
+
+       The dependence of Sigma_Eff on elemental composition is described
+       by Prettyman et al., 2013.  Sigma_Eff is a weighted, linear sum of
+       the abundance of neutron absorbing elements in Vesta's regolith.
+       Sigma_Eff is shown to vary linearly with the percentage of eucritic
+       material in howardite.
+      </description>
+      <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
+      <Record_Character>
+        <fields>9</fields>
+        <groups>0</groups>
+        <record_length unit="byte">75</record_length>
+        <Field_Character>
+          <name>PIXEL_INDEX</name>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
+          <data_type>ASCII_Integer</data_type>
+          <field_length unit="byte">10</field_length>
+          <field_format>%10d</field_format>
+          <description>Pixel index. The map covers -90 to 90 degrees latitude and -180 to 180
+                       degrees east longitude in the Claudia Double Prime coordinate system.
+                       Pixels are indexed from west to east and from south to north, starting
+                       with 0.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>MIN_LAT</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">11</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel latitude southernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MAX_LAT</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">18</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel latitude northernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DELTA_LAT</name>
+          <field_number>4</field_number>
+          <field_location unit="byte">25</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Width of the pixel in latitude.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MIN_LON</name>
+          <field_number>5</field_number>
+          <field_location unit="byte">32</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel east longitude westernmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>MAX_LON</name>
+          <field_number>6</field_number>
+          <field_location unit="byte">39</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Pixel east longitude easternmost boundary.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DELTA_LON</name>
+          <field_number>7</field_number>
+          <field_location unit="byte">46</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">7</field_length>
+          <field_format>%7.1f</field_format>
+          <unit>degree</unit>
+          <description>Width of the pixel in longitude.</description>
+        </Field_Character>
+        <Field_Character>
+          <name>DCP</name>
+          <field_number>8</field_number>
+          <field_location unit="byte">53</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">11</field_length>
+          <field_format>%11.2E</field_format>
+          <unit>unitless</unit>
+          <description>DCP is a unitless quanity that varies linearly with the macroscopic
+                       thermal neutron absorption cross section of the regolith.
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>SIGMA_DCP</name>
+          <field_number>9</field_number>
+          <field_location unit="byte">64</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">10</field_length>
+          <field_format>%10.1E</field_format>
+          <unit>unitless</unit>
+          <description>1-sigma statistical uncertainty in DCP.</description>
+        </Field_Character>
+      </Record_Character>
+    </Table_Character>
+  </File_Area_Observational>
+</Product_Observational>

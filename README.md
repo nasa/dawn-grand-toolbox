@@ -9,3 +9,6 @@ Function that reads character (ASCII) tables, including most raw files and all c
 Function that reads binary data found in raw data files that contain event-mode gamma-ray and neutron data (-EMG and -EMN files).
 
 The routines parse the label, extracting metadata useful for analysis, and read the data. For time series data files (raw and calibrated), the metadata includes mission phase and target infomation instrument settings (STATE, TELREADOUT, and TELSOH) and observing conditions.
+
+## sample_labels
+This directory contains sample labels for evaluation of the software. The accompanying data files can be downloaded from the Planetary Data System Small Bodies Node: https://sbn.psi.edu/pds/resource/dawn/dawngrandPDS4.html. The GRD_STATE_TABLE.TAB and label are included in the dawn-grand-ancillary/miscellaneous/ directory.
