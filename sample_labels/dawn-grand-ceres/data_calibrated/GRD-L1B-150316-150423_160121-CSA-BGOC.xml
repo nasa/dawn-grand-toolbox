@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
 <Product_Observational 
   xmlns="http://pds.nasa.gov/pds4/pds/v1"   
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,9 +13,9 @@
   xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
   xmlns:nucspec="http://pds.nasa.gov/pds4/nucspec/v1"
   xmlns:dawn="http://pds.nasa.gov/pds4/mission/dawn/v1"
-  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd
                       http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.xsd
-                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.xsd
                       http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd
                       http://pds.nasa.gov/pds4/nucspec/v1 https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.xsd
                       http://pds.nasa.gov/pds4/mission/dawn/v1 https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.xsd
@@ -33,7 +34,7 @@
     </Citation_Information>
     <Modification_History>
       <Modification_Detail>
-        <modification_date>2020-10-20</modification_date>
+        <modification_date>2020-12-08</modification_date>
         <version_id>1.0</version_id>
         <description>PDS4 migration of GRD-L1B-150316-150423_160121-CSA-BGOC.TAB from PDS3 dataset DAWN-A-GRAND-3-RDR-CERES-COUNTS-V1.0</description>
       </Modification_Detail>

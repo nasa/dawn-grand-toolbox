@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
 <Product_Observational 
   xmlns="http://pds.nasa.gov/pds4/pds/v1"   
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,41 +13,41 @@
   xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
   xmlns:nucspec="http://pds.nasa.gov/pds4/nucspec/v1"
   xmlns:dawn="http://pds.nasa.gov/pds4/mission/dawn/v1"
-  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd
                       http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.xsd
-                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.xsd
                       http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd
                       http://pds.nasa.gov/pds4/nucspec/v1 https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.xsd
                       http://pds.nasa.gov/pds4/mission/dawn/v1 https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.xsd
                       "
 >
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_raw:grd-l1a-120126-120202_130628-blp2_my</logical_identifier>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_calibrated:grd-l1b-110811-110831_140930-vss-bgoc</logical_identifier>
     <version_id>1.0</version_id>
-    <title>GRD-L1A-120126-120202_130628-BLP2_MY</title>
+    <title>GRD-L1B-110811-110831_140930-VSS-BGOC</title>
     <information_model_version>1.11.0.0</information_model_version>
     <product_class>Product_Observational</product_class>
     <Citation_Information>
       <author_list>Prettyman, T. H.</author_list>
       <publication_year>2020</publication_year>
-      <description>GRaND level 1a -Y-BLP - BGO coincidences: BLP histograms</description>
+      <description>GRaND level 1a BGO calibrated histograms</description>
     </Citation_Information>
     <Modification_History>
       <Modification_Detail>
-        <modification_date>2020-10-14</modification_date>
+        <modification_date>2020-12-08</modification_date>
         <version_id>1.0</version_id>
-        <description>PDS4 migration of GRD-L1A-120126-120202_130628-BLP2_MY.TAB from PDS3 dataset DAWN-A-GRAND-2-EDR-VESTA-COUNTS-V1.0</description>
+        <description>PDS4 migration of GRD-L1B-110811-110831_140930-VSS-BGOC.TAB from PDS3 dataset DAWN-A-GRAND-3-RDR-VESTA-COUNTS-V1.0</description>
       </Modification_Detail>
     </Modification_History>
   </Identification_Area>
   <Observation_Area>
     <Time_Coordinates>
-      <start_date_time>2012-01-26T00:00Z</start_date_time>
-      <stop_date_time>2012-02-02T00:59Z</stop_date_time>
+      <start_date_time>2011-08-11T12:02:14Z</start_date_time>
+      <stop_date_time>2011-08-31T20:24:13Z</stop_date_time>
     </Time_Coordinates>
     <Primary_Result_Summary>
       <purpose>Science</purpose>
-      <processing_level>Raw</processing_level>
+      <processing_level>Calibrated</processing_level>
     </Primary_Result_Summary>
     <Investigation_Area>
       <name>DAWN MISSION TO VESTA AND CERES</name>
@@ -85,11 +86,21 @@
     </Target_Identification>
   <Discipline_Area>
   <msn:Mission_Information>
-    <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
-    <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
-    <msn:spacecraft_clock_start>0380808123.000</msn:spacecraft_clock_start>
-    <msn:spacecraft_clock_stop>0381416462.000</msn:spacecraft_clock_stop>
+    <msn:mission_phase_name>VESTA SCIENCE SURVEY</msn:mission_phase_name>
+    <msn:mission_phase_identifier>VSS</msn:mission_phase_identifier>
+    <msn:spacecraft_clock_start>0366336305.000</msn:spacecraft_clock_start>
+    <msn:spacecraft_clock_stop>0368094425.000</msn:spacecraft_clock_stop>
   </msn:Mission_Information>
+  <geom:Geometry>
+    <geom:SPICE_Kernel_Files>
+      <geom:SPICE_Kernel_Identification>
+        <geom:spice_kernel_file_name>naif0010.tls</geom:spice_kernel_file_name>
+      </geom:SPICE_Kernel_Identification>
+      <geom:SPICE_Kernel_Identification>
+        <geom:spice_kernel_file_name>dawn_203_sclkscet_00039.tsc</geom:spice_kernel_file_name>
+      </geom:SPICE_Kernel_Identification>
+    </geom:SPICE_Kernel_Files>
+  </geom:Geometry>
     <proc:Processing_Information>
     <Local_Internal_Reference>
       <local_identifier_reference>table</local_identifier_reference>
@@ -97,7 +108,7 @@
     </Local_Internal_Reference>
     <proc:Process> 
       <proc:Software>
-        <proc:name>GRD_L1A_PIPELINE</proc:name>
+        <proc:name>GRD_L1B_PIPELINE</proc:name>
         <proc:software_version_id>Version 1.0</proc:software_version_id>
       </proc:Software>
     </proc:Process>
@@ -114,33 +125,12 @@
           <local_reference_type>state_table_to_data_table</local_reference_type>
         </Local_Internal_Reference>
         <nucspec:State_Table_Entry>
-          <nucspec:state_index>16</nucspec:state_index>
+          <nucspec:state_index>11</nucspec:state_index>
           <nucspec:State_Time>
             <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
             <nucspec:Time_Range_SCLK>
-              <nucspec:sclk_start_time>380808123</nucspec:sclk_start_time>
-              <nucspec:sclk_stop_time>381233793</nucspec:sclk_stop_time>
-            </nucspec:Time_Range_SCLK>
-          </nucspec:State_Time>
-        </nucspec:State_Table_Entry>
-        <nucspec:State_Table_Entry>
-          <nucspec:state_index xsi:nil="true" nilReason="missing"></nucspec:state_index>
-          <nucspec:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</nucspec:comment>
-          <nucspec:State_Time>
-            <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
-            <nucspec:Time_Range_SCLK>
-              <nucspec:sclk_start_time>381233972</nucspec:sclk_start_time>
-              <nucspec:sclk_stop_time>381234042</nucspec:sclk_stop_time>
-            </nucspec:Time_Range_SCLK>
-          </nucspec:State_Time>
-        </nucspec:State_Table_Entry>
-        <nucspec:State_Table_Entry>
-          <nucspec:state_index>15</nucspec:state_index>
-          <nucspec:State_Time>
-            <nucspec:state_time_field_name>SCLK</nucspec:state_time_field_name>
-            <nucspec:Time_Range_SCLK>
-              <nucspec:sclk_start_time>381234112</nucspec:sclk_start_time>
-              <nucspec:sclk_stop_time>381416462</nucspec:sclk_stop_time>
+              <nucspec:sclk_start_time>366336305</nucspec:sclk_start_time>
+              <nucspec:sclk_stop_time>368094215</nucspec:sclk_stop_time>
             </nucspec:Time_Range_SCLK>
           </nucspec:State_Time>
         </nucspec:State_Table_Entry>
@@ -152,8 +142,15 @@
         <nucspec:condition_active>true</nucspec:condition_active>
         <nucspec:comment>SEP</nucspec:comment>
         <nucspec:Time_Range_SCLK>
-          <nucspec:sclk_start_time>380808123</nucspec:sclk_start_time>
-          <nucspec:sclk_stop_time>381416462</nucspec:sclk_stop_time>
+          <nucspec:sclk_start_time>366336305</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>366465665</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>false</nucspec:condition_active>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>366465875</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>368094425</nucspec:sclk_stop_time>
         </nucspec:Time_Range_SCLK>
       </nucspec:Observing_Condition>
     </nucspec:Observing_Conditions>
@@ -162,8 +159,8 @@
       <nucspec:Observing_Condition>
         <nucspec:condition_active>false</nucspec:condition_active>
         <nucspec:Time_Range_SCLK>
-          <nucspec:sclk_start_time>380808123</nucspec:sclk_start_time>
-          <nucspec:sclk_stop_time>381416462</nucspec:sclk_stop_time>
+          <nucspec:sclk_start_time>366336305</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>368094425</nucspec:sclk_stop_time>
         </nucspec:Time_Range_SCLK>
       </nucspec:Observing_Condition>
     </nucspec:Observing_Conditions>
@@ -172,8 +169,8 @@
       <nucspec:Observing_Condition>
         <nucspec:condition_active>false</nucspec:condition_active>
         <nucspec:Time_Range_SCLK>
-          <nucspec:sclk_start_time>380808123</nucspec:sclk_start_time>
-          <nucspec:sclk_stop_time>381416462</nucspec:sclk_stop_time>
+          <nucspec:sclk_start_time>366336305</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>368094425</nucspec:sclk_stop_time>
         </nucspec:Time_Range_SCLK>
       </nucspec:Observing_Condition>
     </nucspec:Observing_Conditions>
@@ -182,8 +179,23 @@
       <nucspec:Observing_Condition>
         <nucspec:condition_active>false</nucspec:condition_active>
         <nucspec:Time_Range_SCLK>
-          <nucspec:sclk_start_time>380808123</nucspec:sclk_start_time>
-          <nucspec:sclk_stop_time>381416462</nucspec:sclk_stop_time>
+          <nucspec:sclk_start_time>366336305</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>367911725</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>true</nucspec:condition_active>
+        <nucspec:comment>Description: GSD detect</nucspec:comment>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>367911935</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>367913405</nucspec:sclk_stop_time>
+        </nucspec:Time_Range_SCLK>
+      </nucspec:Observing_Condition>
+      <nucspec:Observing_Condition>
+        <nucspec:condition_active>false</nucspec:condition_active>
+        <nucspec:Time_Range_SCLK>
+          <nucspec:sclk_start_time>367913615</nucspec:sclk_start_time>
+          <nucspec:sclk_stop_time>368094425</nucspec:sclk_stop_time>
         </nucspec:Time_Range_SCLK>
       </nucspec:Observing_Condition>
     </nucspec:Observing_Conditions>
@@ -195,125 +207,122 @@
         </Local_Internal_Reference>
         <dawn:TELREADOUT_List>
           <dawn:TELREADOUT>
-            <dawn:grand_start_sclk>380808123</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381233793</dawn:grand_stop_sclk>
-            <dawn:grand_interval unit="s">70</dawn:grand_interval>
-          </dawn:TELREADOUT>
-          <dawn:TELREADOUT>
-            <dawn:grand_start_sclk>381233972</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381234042</dawn:grand_stop_sclk>
-            <dawn:grand_interval unit="s" xsi:nil="true" nilReason="missing"></dawn:grand_interval>
-            <dawn:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</dawn:comment>
-          </dawn:TELREADOUT>
-          <dawn:TELREADOUT>
-            <dawn:grand_start_sclk>381234112</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381416462</dawn:grand_stop_sclk>
-            <dawn:grand_interval unit="s">70</dawn:grand_interval>
+            <dawn:grand_start_sclk>366336305</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>368094215</dawn:grand_stop_sclk>
+            <dawn:grand_interval unit="s">210</dawn:grand_interval>
           </dawn:TELREADOUT>
       </dawn:TELREADOUT_List>
         <dawn:TELSOH_List>
           <dawn:TELSOH>
-            <dawn:grand_start_sclk>380808123</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381233793</dawn:grand_stop_sclk>
-            <dawn:grand_interval unit="s">35</dawn:grand_interval>
-          </dawn:TELSOH>
-          <dawn:TELSOH>
-            <dawn:grand_start_sclk>381233972</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381234042</dawn:grand_stop_sclk>
-            <dawn:grand_interval unit="s" xsi:nil="true" nilReason="missing"></dawn:grand_interval>
-            <dawn:comment>This state not defined in state table. Refer to GRD-L1A-120126-120202_130628-STA.xml</dawn:comment>
-          </dawn:TELSOH>
-          <dawn:TELSOH>
-            <dawn:grand_start_sclk>381234112</dawn:grand_start_sclk>
-            <dawn:grand_stop_sclk>381416462</dawn:grand_stop_sclk>
+            <dawn:grand_start_sclk>366336305</dawn:grand_start_sclk>
+            <dawn:grand_stop_sclk>368094215</dawn:grand_stop_sclk>
             <dawn:grand_interval unit="s">35</dawn:grand_interval>
           </dawn:TELSOH>
       </dawn:TELSOH_List>
       </dawn:grand>
 </Discipline_Area>
   </Observation_Area>
+  <Reference_List>
+    <Internal_Reference>
+      <lid_reference>urn:nasa:pds:dawn-grand-ceres:document:grd_l1b_bgo_data_processing_v4_1</lid_reference>
+      <reference_type>data_to_document</reference_type>
+      <comment>Dawn's gamma ray and neutron detector: BGO data processing</comment>
+    </Internal_Reference>
+  </Reference_List>
   <File_Area_Observational>
     <File>
-      <file_name>GRD-L1A-120126-120202_130628-BLP2_MY.TAB</file_name>
-      <creation_date_time>2013-06-28T08:37:06Z</creation_date_time>
-      <records>8690</records>
-      <md5_checksum>041382f4cfc737168e3269bb62a83ebb</md5_checksum>
+      <file_name>GRD-L1B-110811-110831_140930-VSS-BGOC.TAB</file_name>
+      <creation_date_time>2014-09-30T20:05:16Z</creation_date_time>
+      <records>8368</records>
+      <md5_checksum>1855e1af0f26a3cef16a6616cc03ba80</md5_checksum>
     </File>
     <Table_Character>
       <local_identifier>table</local_identifier>
       <offset unit="byte">0</offset>
-      <records>8690</records>
+      <records>8368</records>
       <description>
-        This time series contains GRaND EDR (level1a) science data 
-        extracted from raw telmetry packets via a data pipeline.
-
-        Each row contains level1a science data that has been tagged with the
-        SCET_UTC time and SCLK tics for the first packet of the corresponding
-        science data record.  The process of converting raw science data records
-        to level1a records involves separating the science data from the packet
-        headers, decoding and unscrambling the event mode data, and decompressing
-        the histograms.
-
-        The file contains a time series of the BLP pulse height histogram for
-        coincidence events between the -Y BLP and BGO scintillators (CAT2).
+  This data file contains a time series of corrected and calibrated pulse     
+  height spectra measured by GRaND's bismuth germanate (BGO) scintillator     
+  during Vesta encounter. Each row contains the spacecraft clock (SCLK) ticks 
+  and spacecraft event UTC time (SCET_UTC) corresponding to the end of the    
+  science accumulation interval (accurate to 1s). The ephemeris time for the  
+  midpoint of the science interval is also included. Each row also contains   
+  the corresponding 1024-channel BGO spectrum accumulated. Each spectrum has  
+  been subjected to the following corrections:                                
+                                                                              
+    - Removal of analog-to-digital (ADC) differential nonlinearity artifacts  
+    - Gain and offset correction to put each spectrum on the same pulse height
+                                                                              
+  For each channel, the corresponding mid-point pulse height can be determined
+  by multiplying channel index (0-1023) by 8.9 keV/channel.                   
+                                                                              
+  The processing steps, including criteria for including spectra in the time  
+  series, are described by Yamashita and Prettyman, ''Dawn's Gamma Ray and    
+  Neutron Detector: BGO Data Processing,'' which can be found in in the       
+  document collection of this bundle.
       </description>
       <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
       <Record_Character>
-        <fields>2</fields>
+        <fields>3</fields>
         <groups>1</groups>
-        <record_length unit="byte">416</record_length>
-        <Field_Character>
-          <name>SCET_UTC</name>
-          <field_number>1</field_number>
-          <field_location unit="byte">1</field_location>
-          <data_type>ASCII_Date_Time_YMD</data_type>
-          <field_length unit="byte">19</field_length>
-          <field_format>%19s</field_format>
-          <description>
-            The UTC spacecraft event time (SCET) determined from the SCLK value for
-            the first packet in the science data record.  The time format is
-            yyyy-mm-ddThr:mn:sc.
-          </description>
-        </Field_Character>
+        <record_length unit="byte">6188</record_length>
         <Field_Character>
           <name>SCLK</name>
-          <field_number>2</field_number>
-          <field_location unit="byte">20</field_location>
+          <field_number>1</field_number>
+          <field_location unit="byte">1</field_location>
           <data_type>ASCII_Integer</data_type>
-          <field_length unit="byte">11</field_length>
-          <field_format>%11d</field_format>
+          <field_length unit="byte">10</field_length>
+          <field_format>%10d</field_format>
           <unit>Seconds</unit>
           <description>
-            Spacecraft clock count recorded in the first packet of the science
-            data record, indicating the starting time for the collection
-            interval.
+    SCLK ticks at the end of the science accumulation interval (s) Each       
+    science data record has a unique SCLK value, which can be used as an      
+    identifier.                                                               
           </description>
-          <Special_Constants>
-            <valid_maximum>4294967295</valid_maximum>
-          </Special_Constants>
+        </Field_Character>
+        <Field_Character>
+          <name>SCET_UTC</name>
+          <field_number>2</field_number>
+          <field_location unit="byte">11</field_location>
+          <data_type>ASCII_Date_Time_YMD</data_type>
+          <field_length unit="byte">20</field_length>
+          <field_format>%20s</field_format>
+          <description>
+    UTC S/C event time (SCET) at the midpoint of the science accumulation     
+    interval.                                                                 
+          </description>
+        </Field_Character>
+        <Field_Character>
+          <name>ET_MID</name>
+          <field_number>3</field_number>
+          <field_location unit="byte">31</field_location>
+          <data_type>ASCII_Real</data_type>
+          <field_length unit="byte">12</field_length>
+          <field_format>%12.1f</field_format>
+          <unit>Seconds</unit>
+          <description>
+    Ephemeris time at the midpoint of the science accumulation interval (s).  
+          </description>
         </Field_Character>
         <Group_Field_Character>
-          <name>BLP2_MY</name>
+          <name>BGOC</name>
           <group_number>1</group_number>
-          <repetitions>64</repetitions>
+          <repetitions>1024</repetitions>
           <fields>1</fields>
           <groups>0</groups>
           <description>
-            BLP pulse height histogram (64 channels) for coincidence events between
-            the -Y BLP and BGO scintillators (CAT2).
+    1024-channel, calibrated BGO spectrum. The pulse height of each channel   
+    I=0,1023 is given by 8.9 x I with units of keV.                           
           </description>
-          <group_location unit="byte">31</group_location>
-          <group_length unit="byte">384</group_length>
+          <group_location unit="byte">43</group_location>
+          <group_length unit="byte">6144</group_length>
           <Field_Character>
-            <name>BLP2_MY_element</name>
+            <name>BGOC_element</name>
             <field_location unit="byte">1</field_location>
             <data_type>ASCII_Integer</data_type>
             <field_length unit="byte">6</field_length>
             <field_format>%6d</field_format>
             <unit>Counts</unit>
-            <Special_Constants>
-              <valid_maximum>65535</valid_maximum>
-            </Special_Constants>
           </Field_Character>
         </Group_Field_Character>
       </Record_Character>

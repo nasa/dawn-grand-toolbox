@@ -61,6 +61,7 @@ function grd4_read_character_table, label_file=label_file, directory=directory
 ;   -- 22-Oct-2020 THP updated to account for nil S/C sclk_start/stop in some files;
 ;                      allows for single field character (affects one file type,
 ;                      calibrated Mars BGO spectra)
+;   -- 8-Dec-2020 THP updated output structure to echo include the data file
 ;
 
 if keyword_set(label_file) then begin
@@ -204,9 +205,10 @@ for i=0L,nr-1 do begin
 endfor
 free_lun, lun
 
-result={flag:!true, target_name:target_name}
-if not mp_test then result=create_struct(result, 'mission_phase_name', mission_phase_name, $
-                                                 'mission_phase_identifier', mission_phase_identifier)
+result={flag:!true, data_file:data_file}
+if target_name ne '' then result=create_struct(result, 'target_name', target_name)
+if not mp_test and mission_phase_name ne '' then result=create_struct(result, 'mission_phase_name', mission_phase_name)
+if not mp_test and mission_phase_identifier ne '' then result=create_struct(result, 'mission_phase_identifier', mission_phase_identifier)
 if sclk_start ne 0 then result=create_struct(result, 'sclk_start', sclk_start, $
                                                      'sclk_stop', sclk_stop)
 

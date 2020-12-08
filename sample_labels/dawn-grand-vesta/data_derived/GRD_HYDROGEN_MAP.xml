@@ -1,13 +1,14 @@
 <?xml version="1.0"?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/geom/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
 <Product_Observational 
   xmlns="http://pds.nasa.gov/pds4/pds/v1"   
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns:msn="http://pds.nasa.gov/pds4/msn/v1"
-  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
-                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd"
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.xsd"
 >
   <Identification_Area>
     <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_derived:grd_hydrogen_map</logical_identifier>
@@ -76,8 +77,8 @@
       <msn:Mission_Information>
         <msn:mission_phase_name>VESTA SCIENCE LAMO</msn:mission_phase_name>
         <msn:mission_phase_identifier>VSL</msn:mission_phase_identifier>
-        <msn:spacecraft_clock_start_count>0376579234.000</msn:spacecraft_clock_start_count>
-        <msn:spacecraft_clock_stop_count>0379772494.000</msn:spacecraft_clock_stop_count>
+        <msn:spacecraft_clock_start>0376579234.000</msn:spacecraft_clock_start>
+        <msn:spacecraft_clock_stop>0379772494.000</msn:spacecraft_clock_stop>
       </msn:Mission_Information>    
     </Discipline_Area>
   </Observation_Area>

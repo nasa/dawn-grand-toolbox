@@ -1,9 +1,10 @@
 <?xml version="1.0"?>
-<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <?xml-model href="https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.sch" schematypens="http://purl.oclc.org/dsdl/schematron"?> 
 <Product_Observational 
   xmlns="http://pds.nasa.gov/pds4/pds/v1"   
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
@@ -12,30 +13,30 @@
   xmlns:geom="http://pds.nasa.gov/pds4/geom/v1"
   xmlns:nucspec="http://pds.nasa.gov/pds4/nucspec/v1"
   xmlns:dawn="http://pds.nasa.gov/pds4/mission/dawn/v1"
-  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1A00.xsd
+  xsi:schemaLocation="http://pds.nasa.gov/pds4/pds/v1 https://pds.nasa.gov/pds4/pds/v1/PDS4_PDS_1B00.xsd
                       http://pds.nasa.gov/pds4/proc/v1 https://pds.nasa.gov/pds4/proc/v1/PDS4_PROC_1900.xsd
-                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1700.xsd
+                      http://pds.nasa.gov/pds4/msn/v1 https://pds.nasa.gov/pds4/msn/v1/PDS4_MSN_1B00_1100.xsd
                       http://pds.nasa.gov/pds4/geom/v1 https://pds.nasa.gov/pds4/geom/v1/PDS4_GEOM_1900_1510.xsd
                       http://pds.nasa.gov/pds4/nucspec/v1 https://pds.nasa.gov/pds4/nucspec/v1/PDS4_NUCSPEC_1B00_1000.xsd
                       http://pds.nasa.gov/pds4/mission/dawn/v1 https://pds.nasa.gov/pds4/mission/dawn/v1/PDS4_DAWN_1B00_1100.xsd
                       "
 >
   <Identification_Area>
-    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_raw:grd-l1a-120126-120202_130628-sci-scl</logical_identifier>
+    <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_raw:grd-l1a-120126-120202_130628-blp2_pz</logical_identifier>
     <version_id>1.0</version_id>
-    <title>GRD-L1A-120126-120202_130628-SCI-SCL</title>
+    <title>GRD-L1A-120126-120202_130628-BLP2_PZ</title>
     <information_model_version>1.11.0.0</information_model_version>
     <product_class>Product_Observational</product_class>
     <Citation_Information>
       <author_list>Prettyman, T. H.</author_list>
       <publication_year>2020</publication_year>
-      <description>GRaND level 1a instrument science scalers</description>
+      <description>GRaND level 1a +Z-BLP - BGO coincidences: BLP histograms</description>
     </Citation_Information>
     <Modification_History>
       <Modification_Detail>
-        <modification_date>2020-10-14</modification_date>
+        <modification_date>2020-12-08</modification_date>
         <version_id>1.0</version_id>
-        <description>PDS4 migration of GRD-L1A-120126-120202_130628-SCI-SCL.TAB from PDS3 dataset DAWN-A-GRAND-2-EDR-VESTA-COUNTS-V1.0</description>
+        <description>PDS4 migration of GRD-L1A-120126-120202_130628-BLP2_PZ.TAB from PDS3 dataset DAWN-A-GRAND-2-EDR-VESTA-COUNTS-V1.0</description>
       </Modification_Detail>
     </Modification_History>
   </Identification_Area>
@@ -90,7 +91,7 @@
     <msn:spacecraft_clock_start>0380808123.000</msn:spacecraft_clock_start>
     <msn:spacecraft_clock_stop>0381416462.000</msn:spacecraft_clock_stop>
   </msn:Mission_Information>
-    <proc:Processing_Information>
+  <proc:Processing_Information>
     <Local_Internal_Reference>
       <local_identifier_reference>table</local_identifier_reference>
       <local_reference_type>processing_information_to_data_object</local_reference_type>
@@ -234,10 +235,10 @@
   </Observation_Area>
   <File_Area_Observational>
     <File>
-      <file_name>GRD-L1A-120126-120202_130628-SCI-SCL.TAB</file_name>
+      <file_name>GRD-L1A-120126-120202_130628-BLP2_PZ.TAB</file_name>
       <creation_date_time>2013-06-28T08:37:06Z</creation_date_time>
       <records>8690</records>
-      <md5_checksum>59215d77bff134e63e5ee8d3bf7499b1</md5_checksum>
+      <md5_checksum>7bd14c458207181f47f9b41e4abd8112</md5_checksum>
     </File>
     <Table_Character>
       <local_identifier>table</local_identifier>
@@ -246,7 +247,7 @@
       <description>
         This time series contains GRaND EDR (level1a) science data 
         extracted from raw telmetry packets via a data pipeline.
-        
+
         Each row contains level1a science data that has been tagged with the
         SCET_UTC time and SCLK tics for the first packet of the corresponding
         science data record.  The process of converting raw science data records
@@ -254,14 +255,14 @@
         headers, decoding and unscrambling the event mode data, and decompressing
         the histograms.
 
-        This file contains a time series of scaler data from the science
-        telemetry.
+        The file contains a time series of the BLP pulse height histogram for
+        coincidence events between the +Z BLP and BGO scintillators (CAT2).
       </description>
       <record_delimiter>Carriage-Return Line-Feed</record_delimiter>
       <Record_Character>
-        <fields>3</fields>
+        <fields>2</fields>
         <groups>1</groups>
-        <record_length unit="byte">176</record_length>
+        <record_length unit="byte">416</record_length>
         <Field_Character>
           <name>SCET_UTC</name>
           <field_number>1</field_number>
@@ -270,8 +271,9 @@
           <field_length unit="byte">19</field_length>
           <field_format>%19s</field_format>
           <description>
-            The UTC spacecraft event time (SCET) determined from the packet's SCLK
-            value.  The time format is yyyy-mm-ddThr:mn:sc.
+            The UTC spacecraft event time (SCET) determined from the SCLK value for
+            the first packet in the science data record.  The time format is
+            yyyy-mm-ddThr:mn:sc.
           </description>
         </Field_Character>
         <Field_Character>
@@ -283,67 +285,28 @@
           <field_format>%11d</field_format>
           <unit>Seconds</unit>
           <description>
-            Spacecraft clock count at the end of the science accumulation interval.
+            Spacecraft clock count recorded in the first packet of the science
+            data record, indicating the starting time for the collection
+            interval.
           </description>
           <Special_Constants>
             <valid_maximum>4294967295</valid_maximum>
           </Special_Constants>
         </Field_Character>
-        <Field_Character>
-          <name>PSC_SCI</name>
-          <field_number>3</field_number>
-          <field_location unit="byte">31</field_location>
-          <data_type>ASCII_Integer</data_type>
-          <field_length unit="byte">6</field_length>
-          <field_format>%6d</field_format>
-          <description>
-            Packet sequence counter (PSC_SCI) from the science telemetry.
-            The PSC for the first packet of each science data record
-            is provided.  The counter rolls over at 16383.
-          </description>
-          <Special_Constants>
-            <valid_maximum>16383</valid_maximum>
-          </Special_Constants>
-        </Field_Character>
         <Group_Field_Character>
-          <name>SCALER_SCI</name>
+          <name>BLP2_PZ</name>
           <group_number>1</group_number>
-          <repetitions>23</repetitions>
+          <repetitions>64</repetitions>
           <fields>1</fields>
           <groups>0</groups>
           <description>
-            Scaler data from the science telemetry (23 scalers):
-
-            Index         Description
-            ------------  -----------
-            0             Dead time counts
-            1             BGO overload events
-            2             CZT overload events
-            3             +Z phoswich overload events
-            4             -Y BLP overload events
-            5             +Y BLP overload events
-            6             -Z phoswich overload events
-            7             +Z phoswich CAT4 events
-            8             -Y BLP CAT4 events
-            9             +Y BLP CAT4 events
-            10            -Z phoswich CAT4 events
-            11            Early second interaction events
-            12            Multiple-crystal CZT events
-            13            Valid CZT events (CAT10)
-            14            Coincidence BGO and CZT events (CAT7)
-            15            Coincidence of three or more sensor elements
-            16            Total events processed by GRaND
-            17            Number of single CZT events (CAT10) in the gamma ray event buffer
-            18            Number of BGO-CZT coincidence events (CAT7) in the gamma ray event buffer
-            19            Number of events (CAT4) in the neutron event buffer
-            20            Total number of events allowed in the gamma ray event buffer
-            21            Number of single CZT events (CAT10) allowed in the gamma ray event buffer
-            22            Number of events allowed in the neutron event buffer
+            BLP pulse height histogram (64 channels) for coincidence events between
+            the +Z BLP and BGO scintillators (CAT2).
           </description>
-          <group_location unit="byte">37</group_location>
-          <group_length unit="byte">138</group_length>
+          <group_location unit="byte">31</group_location>
+          <group_length unit="byte">384</group_length>
           <Field_Character>
-            <name>SCALER_SCI_element</name>
+            <name>BLP2_PZ_element</name>
             <field_location unit="byte">1</field_location>
             <data_type>ASCII_Integer</data_type>
             <field_length unit="byte">6</field_length>

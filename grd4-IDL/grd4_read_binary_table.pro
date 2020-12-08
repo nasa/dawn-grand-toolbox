@@ -35,6 +35,9 @@ function grd4_read_binary_table, label_file=label_file, directory=directory
 ;   -- 22-Jun-2020 NY added file_search() to append a path separator when missing
 ;   -- 28-Jul-2020 THP added state, telreadout & telsoh to output structure
 ;   -- 1-Dec-2020 THP updated to include NucSpec features 
+;   -- 8-Dec-2020 THP updated output structure to echo include the data file
+;
+
 
 if keyword_set(label_file) then begin
   file=label_file & if keyword_set(directory) then file=file_search(directory,/mark_directory)+label_file
@@ -144,7 +147,7 @@ for i=0L,nr-1 do begin
 endfor
 free_lun, lun
 
-result={flag:!true, target_name:target_name}
+result={flag:!true, data_file:data_file, target_name:target_name}
 if not mp_test then result=create_struct(result, 'mission_phase_name', mission_phase_name, $
                                                  'mission_phase_identifier', mission_phase_identifier, $
                                                  'sclk_start', sclk_start, $
