@@ -14,7 +14,7 @@
     <logical_identifier>urn:nasa:pds:dawn-grand-vesta:data_derived:grd_fast_neutron_residual_map</logical_identifier>
     <version_id>1.0</version_id>
     <title>GRD_FAST_NEUTRON_RESIDUAL_MAP</title>
-    <information_model_version>1.10.0.0</information_model_version>
+    <information_model_version>1.11.0.0</information_model_version>
     <product_class>Product_Observational</product_class>
     <Citation_Information>
       <author_list>Lawrence, D. J.</author_list>
